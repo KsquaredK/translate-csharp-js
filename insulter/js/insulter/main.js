@@ -6,7 +6,7 @@ function main() {
     "You think you're so special...and you are. The fact of your existence is nearly impossible to believe",
     "I'd rather walk than be on the same plane as you",
     "If I were given a million dollars to hang out with you...I would, but then I'd have to spend half of it on therapy",
-    "Do you have to be so...like that?"
+    "Do you have to be so...like that?",
   ];
 
   // This code ensures we don't end up with duplicate insults
@@ -23,8 +23,6 @@ function main() {
     console.log(insults[index]);
   }
 }
-
-
 
 // Remember getting a random integer in C# is different
 function getRandomInt(min, max) {
