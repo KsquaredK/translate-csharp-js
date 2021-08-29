@@ -1,30 +1,27 @@
 console.log("Let's roll some dice, baby!");
 console.log("---------------------------");
 
-const createDie = (name, value) => {
-    return {
-      name: name,
-      value: value,
-    };
-  };
-
-  const getDieValue = () => {
-
-  }
-
-
-
-for (int i = 0; i < 10; i++)
-
-{
-    const die1 = Roll();
-    Die die2 = Roll();
-
-    message = (`${die1} + ${die2} == ${die1.value + die2.value}`);
-    if (die1.value == die2.value)
-    {
-        (message + (`${ DOUBLES! }`)
+const rollDice = () => {  
+  
+  for (let i = 0; i < 10; i++) {
+    const die1 = getRandomInt(1, 6);
+    const die2 = getRandomInt(1, 6);
+    
+    const message = (`${die1} + ${die2} == ${die1 + die2}`);
+    
+    if (die1 == die2){
+      console.log(message + " DOUBLES!")
+    } else
+    { console.log(message)
     }
-
-    Console.WriteLine(message);
+  }
 }
+
+// random num between 1-6\
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+rollDice();
