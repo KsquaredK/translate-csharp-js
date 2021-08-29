@@ -44,13 +44,12 @@ const enemies = [
 const getEnemies = () => {
   for (enemy of enemies) {
     if (enemy.isReallyHated) {
-      console.log(
-        $`{enemy.FirstName} {enemy.LastName} (Really, really dislike!)`
-      );
+      debugger
+console.log(`${enemy.firstName} ${enemy.lastName} (Really, really dislike!)` );
     } else {
-      console.log($`{enemy.firstName} {enemy.lastName}`);
+      console.log(`${enemy.firstName} ${enemy.lastName}`);
     }
   }
 };
 
-getEnemies(enemies);
+getEnemies();
